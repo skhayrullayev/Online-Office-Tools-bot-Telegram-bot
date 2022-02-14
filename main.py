@@ -8,9 +8,8 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.send_message(message.chat.id, "Assalamu alaykum!\n Men ushbu chatdagi barcha xabarlarni Lotindan Kirilga yoki Kirildan Lotinga o'gira olaman, ushbu botdan kundalik ishlaringizda foydalanishingiz mumkin. " +
-                                     "Tez kunda mazkur botga yangi funksiyalar qo'shiladi. Umid qilamizki, " +
-                                    "mazkur bot sizga kundalik vazifalarni bajarishda yordam beradi. Siz xabar yoki takliflar bo'lsa @skhayrullayev ga murojat qiling" .format(message.from_user))
+    bot.send_message(message.chat.id, "Assalamu alaykum!\nMen ushbu chatdagi barcha siz yuborgan xabarlarni Lotindan Kirilga yoki Kirildan Lotinga o'gira olaman. " +
+                                    "Men sizga kundalik vazifalarni bajarishda yordam beraman. Agar sizda xabar yoki takliflar bo'lsa @khayrus_dev ga murojat qiling" .format(message.from_user))
 
 
 @bot.message_handler(func=lambda message: True)
@@ -24,12 +23,3 @@ def echo_all(message):
 
 
 bot.polling()
-
-
-
-
-
-
-
-
-
