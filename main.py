@@ -1,6 +1,5 @@
 from transliterate import to_latin
 from transliterate import to_cyrillic
-from telebot import types
 import telebot
 
 TOKEN = "5103265847:AAFEYRHQShWPaWeqhtVQydLrP_edZ_eBHzo"
